@@ -1,0 +1,37 @@
+El Laravelcollective / html ha sido actualizado a Laravel 5.4 pero no hay ningún cambio en la documentación hasta ahora. Si desea ver la solicitud de pull está aquí:
+Https://github.com/LaravelCollective/html/pull/276
+Https://github.com/LaravelCollective/html/pull/284
+
+Solo usa:
+ composer require "laravelcollective/html":"^5.4"
+O,
+ composer require laravelcollective/html
+
+Si no desea especificar la versión y obtener la misma versión más reciente de LaravelCollective.
+Problema anterior:
+Laravelcollective/html v5.3.0 requiere Laravel 5.3 y aún no soporta Laravel 5.4 .
+El laravelcollective/html v5.4 está bajo edición abierta:
+
+Https://github.com/LaravelCollective/html/pull/276
+
+Podría fusionarse en cualquier momento.
+Sólo tienes un ojo en ella.
+Editar:
+Alternativamente, podría usar maddhatter's repositorio git maddhatter's ya que había hecho algunos cambios que aún no se proporcionan en git@github.com:st3f/html.git repositorio.
+Sólo tienes que añadirlo a tu composer.json
+ "repositories": [ { "type": "vcs", "url": "https://github.com/maddhatter/html.git" } ], "require": { "laravelcollective/html": "5.4.x-dev", }
+y correr
+    Actualización del compositor
+O, si no necesita esos cambios, puede seguir la respuesta de Cerlin Boss
+
+
+//lo borre de composer.json
+"laravelcollective/html": "^5.4"
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+esta aplicado a media en el modelo de Article
+use Cviebrock\EloquentSluggable\Sluggable;
+
+al parecer lo actualizo el desarrollador para estas ultimas version url amigables
